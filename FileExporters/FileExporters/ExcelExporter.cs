@@ -13,7 +13,8 @@ namespace FileExporters
             Workbook xlBook = xlApp.Workbooks.Add(XlWBATemplate.xlWBATWorksheet);
             Worksheet xlSheet = (Worksheet)xlBook.Worksheets[1];
 
-            // Додайте необхідні дані до робочого листа Excel
+            xlSheet.Cells[1, 1] = "Комірка1";
+            xlSheet.Cells[1, 2] = "Комірка2";
 
             try
             {
